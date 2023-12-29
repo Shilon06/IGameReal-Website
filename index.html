@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>iGaming Website - Home</title>
+
+    <script>
+        // Your JavaScript code goes here
+        function performLogin() {
+            // Perform login logic (basic alert for demonstration)
+            alert('You are logged in');
+
+            // Redirect to the 'Games' screen
+            window.location.href = 'games.html';
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <h1>iGameReal</h1>
+            <img src="../assets/Images/iGameReal.png" alt="iGameReal Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- New Section -->
+<section class="welcome-section">
+    <div class="welcome-container">
+        <p class="welcome-text">Welcome to <strong class="igame-real">iGameReal</strong></p>
+        <p class="subtext">Play 8 casino card games and win big!</p>
+
+        <!-- Buttons for Login and Register -->
+        <div class="button-container">
+            <button class="login-button" onclick="performLogin()">Login</button>
+            <button class="register-button">Register</button>
+        </div>
+        
+        <!-- Username and Password fields for Login -->
+        <div class="login-form" style="display: none; color: white; padding: 20px;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <button class="login-submit-button" onclick="performLogin()">Login</button>
+        </div>
+</section>
+
+<!-- Registration Form -->
+<div class="registration-form" style="display: none; color: white; padding: 20px;">
+    <h2>Registration Form</h2>
+    <form onsubmit="return validateRegistrationForm()">
+        <!-- Your form fields go here -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Please enter only letters" required>
+
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" pattern="[A-Za-z]+" title="Please enter only letters" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" pattern="[0-9]+" title="Please enter only numbers" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script>
+    function performLogin() {
+    // Toggle the visibility of the login form
+    var loginForm = document.querySelector('.login-form');
+    if (loginForm.style.display === 'none') {
+        loginForm.style.display = 'block';
+    } else {
+        // Retrieve username and password from the input fields
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        // Basic validation (you can add more robust validation)
+        if (!username || !password) {
+            alert('Please enter both username and password.');
+            return;
+        }
+
+        // Perform login logic (basic alert for demonstration)
+        alert('You are logged in');
+
+        // Scroll down to the 'Games' section
+        var gamesSection = document.querySelector('.games-container');
+        gamesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+</script>
+
+
+
+
+       <!-- Games Section -->
+       <div class="games-container sequence-games">
+        <div class="game special-game">
+            <img src="../assets/Images/royal_flush_rendezvous.jpg" alt="Game 1">
+            <p class="game-title">Royal Flush Rendezvous</p>
+            <button class="play-now-button" onclick="openTryMeWindow('royal_flush_rendezvous')">Try Me</button>
+        </div>
+
+    <div class="game">
+        <img src="../assets/Images/Blackjack_Blitz.jpg" alt="Game 2">
+        <p class="game-title">Blackjack Blitz</p>
+        <button class="play-now-button" onclick="openTryMeWindow('blackjack_blitz')">Try Me</button>
+    </div>
+
+   
+    <div class="game special-game">
+        <img src="../assets/Images/roulette.jpg" alt="Game 3">
+        <p class="game-title">Roulette Royale</p>
+        <button class="play-now-button" onclick="openTryMeWindow('roulette')">Try Me</button>
+    </div>
+
+    <div class="game">
+        <img src="../assets/Images/Lucky Number 7 Slots.webp" alt="Game 4">
+        <p class="game-title">Lucky Number 7 Slots</p>
+        <button class="play-now-button" onclick="openTryMeWindow('lucky_number_7_slots')">Try Me</button>
+    </div>
+
+   
+    <div class="game special-game">
+        <img src="../assets/Images/Baccarat Bonanza.jpg" alt="Game 5">
+        <p class="game-title">Baccarat Bonanza</p>
+        <button class="play-now-button" onclick="openTryMeWindow('baccarat_bonanza')">Try Me</button>
+    </div>
+
+    <div class="game">
+        <img src="../assets/Images/casino game.jpg" alt="Game 6">
+        <p class="game-title">Craps Carnival</p>
+        <button class="play-now-button" onclick="openTryMeWindow('craps_carnival')">Try Me</button>
+    </div>
+
+
+  
+    <div class="game special-game">
+        <img src="../assets/Images/Texas_Hold_em_poker.jpg" alt="Game 7">
+        <p class="game-title">Texas Hold'em Triumph</p>
+        <button class="play-now-button" onclick="openTryMeWindow('texas_holdem_triumph')">Try Me</button>
+    </div>
+    
+    <div class="game">
+        <img src="../assets/Images/poker tournament.jpg" alt="Game 8">
+        <p class="game-title">Poker Royale</p>
+        <button class="play-now-button" onclick="openTryMeWindow('poker_royale')">Try Me</button>
+    </div>
+</div>
+
+<section class="about-us-section">
+    <h2>About Us</h2>
+    <p>We are a startup dedicated to providing the best online 
+        casino experience. Our mission is to provide a safe and 
+        secure platform for players to enjoy their favorite casino 
+        games.</p>
+
+        <p class="additional-text">Our team is made up of experienced professionals in the 
+            online gaming industry. We are passionate about providing 
+            the best possible experience for our players.</p>
+</section>
+
+<section class="contact-us-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <p class="contact-label">Name</p>
+        <input type="text" name="name" placeholder="Your Name">
+
+        <p class="contact-label">Email Address</p>
+        <input type="email" name="email" placeholder="Your Email">
+
+        <p class="contact-label">Message</p>
+        <textarea name="message" placeholder="Your Message"></textarea>
+
+        <button class="submit-button">Submit</button>
+    </div>
+
+    <div class="contact-info-box">
+        <p class="bold-text">For any inquiries, please contact us at:</p>
+        <p>Email: info@igamereal.com</p>
+        <p>Phone: 555-555-5555</p>
+    </div>
+</section>
+
+<style>
+    .custom-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image1.jpeg" class="img-fluid custom-img" alt="Casino Image 1">
+            <!-- Optional caption or additional information -->
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image2.jpg" class="img-fluid custom-img" alt="Casino Image 2">
+            <!-- Optional caption or additional information -->
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image3.jpg" class="img-fluid custom-img" alt="Casino Image 3">
+            <!-- Optional caption or additional information -->
+        </div>
+        <!-- Add more columns for additional images -->
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image4.jpg" class="img-fluid custom-img" alt="Casino Image 4">
+            <a href="http://www.freepik.com">Designed by starline / Freepik</a>
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image5.jpg" class="img-fluid custom-img" alt="Casino Image 5">
+            <a href="http://www.freepik.com">Designed by macrovector / Freepik</a>
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image6.jpg" class="img-fluid custom-img" alt="Casino Image 6">
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image7.jpg" class="img-fluid custom-img" alt="Casino Image 7">
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image8.jpg" class="img-fluid custom-img" alt="Casino Image 8">
+        </div>
+        <div class="col-md-4">
+            <img src="../assets/Images/Bootstrap_Image9.jpg" class="img-fluid custom-img" alt="Casino Image 9">
+        </div>
+    </div>
+</div>
+
+<section class="game-section">
+    <div class="game-container">
+        <h2 class="bold-text">Poker Royale</h2>
+        
+        <div class="game-content">
+            <img src="../assets/Images/poker tournament.jpg" alt="Game 1 Image" class="game-image">
+            
+            <p class="game-description">
+                Embark on a thrilling poker experience with Poker Royale. Test your skills, 
+                bluff your way to victory, and enjoy the strategic depth of this classic casino card game.
+                Whether you're a seasoned pro or new to poker, our platform provides an immersive 
+                and exciting environment for all players. Get ready to shuffle, deal, and play your 
+                way to triumph in the world of Poker Royale - Poker!
+            </p>
+            <button class="play-now-button">Play Now</button>
+        </div>
+    </div>
+</section>
+
+<section class="game-section right">
+    <div class="game-container">
+        <h2 class="bold-text">Blackjack Bonanza</h2>
+        
+        <div class="game-content">
+            <img src="../assets/Images/Baccarat Bonanza.jpg" alt="Game 2 Image" class="game-image">
+            
+            <p class="game-description">
+                Dive into the world of high-stakes Blackjack with Blackjack Bonanza. Experience the thrill of the classic
+                card game as you aim for 21 and outsmart the dealer. Whether you're a seasoned strategist or
+                a newcomer to the game, our platform offers an engaging and immersive Blackjack experience.
+                Are you ready to challenge the dealer and hit the jackpot in Blackjack Bonanza?
+            </p>
+            <button class="play-now-button">Play Now</button>
+        </div>
+    </div>
+</section>
+    <footer><div class="footer-left">
+        <p>&copy; 2023 iGameReal</p>
+    </div>
+    <div class="footer-right">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a></footer>
+
+        <script>
+            // jQuery script goes here
+            $(document).ready(function() {
+                // Handle click event on Register button
+                $(".register-button").click(function() {
+                    // Display the form (replace with your actual form display logic)
+                    $(".registration-form").show();
+                });
+        
+                // Validate inputs when the form is submitted
+                $(".registration-form").submit(function(event) {
+                    // Prevent the default form submission
+                    event.preventDefault();
+        
+                    // Your input validation logic goes here
+        
+                    // If all validations pass, you can proceed with further actions or form submission
+                    alert("Registration successful!");
+                });
+            });
+        </script>
+<script>
+    // Function to open a new window/tab with a relevant background
+    function openTryMeWindow(gameName) {
+        // Replace 'your_website_url_here' with the actual URL of the website you want to open
+        var website_url = "https://static8.depositphotos.com/1434993/1055/i/380/depositphotos_10558589-stock-photo-casino-chips-dropping-gold.jpg"; // Replace this with your website URL
+
+        // Open a new window or tab
+        var tryMeWindow = window.open(website_url, '_blank');
+
+        // You can optionally set the background image for the new window or tab
+        // For example, you can add the following line to set a background image
+        // tryMeWindow.document.body.style.backgroundImage = 'url(' + background_image_url + ')';
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 35px; 
+    height: auto; 
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.igame-real {
+    color: #ff0000; 
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.welcome-section {
+    background-color: #f0f0f0;
+    padding: 40px;
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(255, 255, 255)
+}
+
+.welcome-container {
+    text-align: right; 
+}
+
+.welcome-text,
+.button-container {
+    margin-right: 1050px; 
+}
+
+.subtext {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-right: 42%;
+}
+
+
+.button-container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.login-button,
+.register-button,
+.play-now-button {
+    padding: 10px 20px;
+    margin-left: 150px; 
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sequence-games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.sequence-games .game {
+    width: 48%;
+    margin-bottom: 100px;
+}
+
+
+.special-game {
+    margin-right: -500px; 
+}
+
+.about-us-section {
+    padding: 20px 500px;
+    background-color: #f0f0f0;
+    text-align: center; 
+    border: 2px solid #ffffff; 
+    border-radius: 100px; 
+}
+
+.about-us-section h2 {
+    font-size: 30px;
+    margin-bottom: 1px;
+    color: rgb(180, 0, 252);
+}
+
+.about-us-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.about-us-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+
+/* ... (previous CSS code) ... */
+
+.contact-us-section {
+    padding: 40px;
+    background-color: #f0f0f0;
+    text-align: center; 
+}
+
+.contact-us-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-label {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-us-section h2,
+.contact-label,
+.contact-info-box p {
+    color: #fff; 
+}
+
+.contact-info-box p {
+    margin-bottom: 5px; 
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.game-section {
+    max-width: 800px; 
+    margin-left: 100px; 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #ff0000; 
+}
+
+.footer-right a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 15px; 
+}
+
+.footer-left {
+    color: #fff;
+}
+
+.game.special-game img,
+.game img {
+    width: 200px;
+    height: 150px;
+    margin-left: 200px;
+}
+
+.game-title {
+    margin-top: 10px; 
+    text-align: center;
+    margin-left: -600px; 
+}
+
+.play-now-button {
+    margin-top: 10px; 
+    margin-left: 253px; 
+}
+
+
+
+/* Poker Royale Image */
+.game-section .game-container .game-content .game-image {
+    width: 300px; 
+    height: 200px; 
+    
+}
+
+.game-section .game-content p {
+    color: #fff; 
+}
+
+/* Blackjack Bonanza Image */
+.game-section.right .game-container .game-content .game-image {
+    width: 300px; 
+    height: 200px; 
+}
+
+.game-container h2 {
+    color: rgb(180, 0, 252); 
+}
+
+.play-now-button {
+    margin-bottom: 20px; 
+}
+
+body,
+.welcome-section,
+.about-us-section,
+.contact-us-section {
+    background-color: #272626; 
+}
+
+.game-title {
+    color: #fff; 
+}
+
+.custom-img {
+    width: 100%; 
+    height: auto; 
+    max-width: 300px; 
+    margin-top: 200px; 
+}
