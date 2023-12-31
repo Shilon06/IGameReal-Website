@@ -76,30 +76,31 @@
 </div>
 
 <script>
+    /* login */
     function performLogin() {
-    // Toggle the visibility of the login form
-    var loginForm = document.querySelector('.login-form');
-    if (loginForm.style.display === 'none') {
-        loginForm.style.display = 'block';
-    } else {
-        // Retrieve username and password from the input fields
-        var username = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
+        // Toggle the visibility of the login form
+        var loginForm = document.querySelector('.login-form');
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+        } else {
+            // Retrieve username and password from the input fields
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
 
-        // Basic validation (you can add more robust validation)
-        if (!username || !password) {
-            alert('Please enter both username and password.');
-            return;
+            // Basic validation (you can add more robust validation)
+            if (!username || !password) {
+                alert('Please enter both username and password.');
+                return;
+            }
+
+            // Perform login logic (basic alert for demonstration)
+            alert('You are logged in');
+
+            /* Scroll down to the 'Games' section */
+            var gamesSection = document.querySelector('.games-container');
+            gamesSection.scrollIntoView({ behavior: 'smooth' });
         }
-
-        // Perform login logic (basic alert for demonstration)
-        alert('You are logged in');
-
-        /* Scroll down to the 'Games' section */
-        var gamesSection = document.querySelector('.games-container');
-        gamesSection.scrollIntoView({ behavior: 'smooth' });
     }
-}
 </script>
 
 
@@ -120,8 +121,7 @@
     </div>
 
    
-    <div class="game special-game">
-        <img src="../IGameReal-Website/Images/roulette.jpg"alt="Game 3">
+    <div class="game special-game"> <img src="../IGameReal-Website/Images/roulette.jpg"alt="Game 3">
         <p class="game-title">Roulette Royale</p>
         <button class="play-now-button" onclick="openTryMeWindow('roulette')">Try Me</button>
     </div>
