@@ -75,37 +75,6 @@
     </form>
 </div>
 
-<script>
-    /* login */
-    function performLogin() {
-        // Toggle the visibility of the login form
-        var loginForm = document.querySelector('.login-form');
-        if (loginForm.style.display === 'none') {
-            loginForm.style.display = 'block';
-        } else {
-            // Retrieve username and password from the input fields
-            var username = document.getElementById('username').value;
-            var password = document.getElementById('password').value;
-
-            // Basic validation (you can add more robust validation)
-            if (!username || !password) {
-                alert('Please enter both username and password.');
-                return;
-            }
-
-            // Perform login logic (basic alert for demonstration)
-            alert('You are logged in');
-
-            /* Scroll down to the 'Games' section */
-            var gamesSection = document.querySelector('.games-container');
-            gamesSection.scrollIntoView({ behavior: 'smooth' });
-        }
-    }
-</script>
-
-
-
-
        <!-- Games Section -->
        <div class="games-container sequence-games">
         <div class="game special-game">
@@ -318,13 +287,30 @@
 </script>
 
 <script>
-    // Your JavaScript code goes here
+    /* login */
     function performLogin() {
-        // Perform login logic (basic alert for demonstration)
-        alert('You are logged in');
+        // Toggle the visibility of the login form
+        var loginForm = document.querySelector('.login-form');
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+        } else {
+            // Retrieve username and password from the input fields
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
 
-        // Redirect to the 'Games' screen
-        window.location.href = 'games.html';
+            // Basic validation (you can add more robust validation)
+            if (!username || !password) {
+                alert('Please enter both username and password.');
+                return;
+            }
+
+            // Perform login logic (basic alert for demonstration)
+            alert('You are logged in');
+
+            /* Scroll down to the 'Games' section */
+            var gamesSection = document.querySelector('.games-container');
+            gamesSection.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 </script>
 
