@@ -67,7 +67,7 @@
 <div class="registration-form" style="display: none; color: white; padding: 20px;">
     <h2>Registration Form</h2>
     <form onsubmit="return validateRegistrationForm()">
-        <!-- Your form fields go here -->
+     
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" pattern="[A-Za-z]+" title="Please enter only letters" required>
 
@@ -104,7 +104,7 @@
         // Perform login logic (basic alert for demonstration)
         alert('You are logged in');
 
-        // Scroll down to the 'Games' section
+        /* Scroll down to the 'Games' section */
         var gamesSection = document.querySelector('.games-container');
         gamesSection.scrollIntoView({ behavior: 'smooth' });
     }
@@ -117,39 +117,39 @@
        <!-- Games Section -->
        <div class="games-container sequence-games">
         <div class="game special-game">
-            <img src="../IGameReal-Website/Images/royal_flush_rendezvous.jpg" alt="Game 1">
+            <img src="../IGameReal-Website/Images/royal_flush_rendezvous.jpg"alt="Game 1">
             <p class="game-title">Royal Flush Rendezvous</p>
             <button class="play-now-button" onclick="openTryMeWindow('royal_flush_rendezvous')">Try Me</button>
         </div>
 
     <div class="game">
-        <img src="../IGameReal-Website/Images/Blackjack_Blitz.jpg" alt="Game 2">
+        <img src="../IGameReal-Website/Images/Blackjack_Blitz.jpg"alt="Game 2">
         <p class="game-title">Blackjack Blitz</p>
         <button class="play-now-button" onclick="openTryMeWindow('blackjack_blitz')">Try Me</button>
     </div>
 
    
     <div class="game special-game">
-        <img src="../IGameReal-Website/Images/roulette.jpg" alt="Game 3">
+        <img src="../IGameReal-Website/Images/roulette.jpg"alt="Game 3">
         <p class="game-title">Roulette Royale</p>
         <button class="play-now-button" onclick="openTryMeWindow('roulette')">Try Me</button>
     </div>
 
     <div class="game">
-        <img src="../IGameReal-Website/Images/Lucky Number 7 Slots.webp" alt="Game 4">
+        <img src="../IGameReal-Website/Images/Lucky Number 7 Slots.webp"alt="Game 4">
         <p class="game-title">Lucky Number 7 Slots</p>
         <button class="play-now-button" onclick="openTryMeWindow('lucky_number_7_slots')">Try Me</button>
     </div>
 
    
     <div class="game special-game">
-        <img src="../IGameReal-Website/Images/Baccarat Bonanza.jpg" alt="Game 5">
+        <img src="../IGameReal-Website/Images/Baccarat Bonanza.jpg"alt="Game 5">
         <p class="game-title">Baccarat Bonanza</p>
         <button class="play-now-button" onclick="openTryMeWindow('baccarat_bonanza')">Try Me</button>
     </div>
 
     <div class="game">
-        <img src="../IGameReal-Website/Images/casino game.jpg" alt="Game 6">
+        <img src="../IGameReal-Website/Images/casino game.jpg"alt="Game 6">
         <p class="game-title">Craps Carnival</p>
         <button class="play-now-button" onclick="openTryMeWindow('craps_carnival')">Try Me</button>
     </div>
@@ -157,13 +157,13 @@
 
   
     <div class="game special-game">
-        <img src="../IGameReal-Website/Images/Texas_Hold_em_poker.jpg" alt="Game 7">
+        <img src="../IGameReal-Website/Images/Texas_Hold_em_poker.jpg"alt="Game 7">
         <p class="game-title">Texas Hold'em Triumph</p>
         <button class="play-now-button" onclick="openTryMeWindow('texas_holdem_triumph')">Try Me</button>
     </div>
     
     <div class="game">
-        <img src="../IGameReal-Website/Images/poker tournament.jpg" alt="Game 8">
+        <img src="../IGameReal-Website/Images/poker tournament.jpg"alt="Game 8">
         <p class="game-title">Poker Royale</p>
         <button class="play-now-button" onclick="openTryMeWindow('poker_royale')">Try Me</button>
     </div>
@@ -216,17 +216,17 @@
     <div class="row">
         <div class="col-md-4">
             <img src="../IGameReal-Website/Images/Bootstrap_Image1.jpeg" class="img-fluid custom-img" alt="Casino Image 1">
-            <!-- Optional caption or additional information -->
+         
         </div>
         <div class="col-md-4">
             <img src="../IGameReal-Website/Images/Bootstrap_Image2.jpg" class="img-fluid custom-img" alt="Casino Image 2">
-            <!-- Optional caption or additional information -->
+       
         </div>
         <div class="col-md-4">
             <img src="../IGameReal-Website/Images/Bootstrap_Image3.jpg" class="img-fluid custom-img" alt="Casino Image 3">
-            <!-- Optional caption or additional information -->
+         
         </div>
-        <!-- Add more columns for additional images -->
+      
         <div class="col-md-4">
             <img src="../IGameReal-Website/Images/Bootstrap_Image4.jpg" class="img-fluid custom-img" alt="Casino Image 4">
             <a href="http://www.freepik.com">Designed by starline / Freepik</a>
@@ -292,41 +292,37 @@
     <div class="footer-right">
         <a href="#">About Us</a>
         <a href="#">Contact Us</a>
-        <a href="#">Privacy Policy</a></footer>
+        <a href="#">Privacy Policy</a></footer> </div>
 
         <script>
             // jQuery script goes here
             $(document).ready(function() {
-                // Handle click event on Register button
+         
                 $(".register-button").click(function() {
-                    // Display the form (replace with your actual form display logic)
+                
                     $(".registration-form").show();
                 });
         
-                // Validate inputs when the form is submitted
                 $(".registration-form").submit(function(event) {
-                    // Prevent the default form submission
+                 
                     event.preventDefault();
         
-                    // Your input validation logic goes here
+          
         
-                    // If all validations pass, you can proceed with further actions or form submission
+                 
                     alert("Registration successful!");
                 });
             });
         </script>
 <script>
-    // Function to open a new window/tab with a relevant background
+  
     function openTryMeWindow(gameName) {
-        // Replace 'your_website_url_here' with the actual URL of the website you want to open
+     
         var website_url = "https://static8.depositphotos.com/1434993/1055/i/380/depositphotos_10558589-stock-photo-casino-chips-dropping-gold.jpg"; // Replace this with your website URL
 
-        // Open a new window or tab
+    
         var tryMeWindow = window.open(website_url, '_blank');
 
-        // You can optionally set the background image for the new window or tab
-        // For example, you can add the following line to set a background image
-        // tryMeWindow.document.body.style.backgroundImage = 'url(' + background_image_url + ')';
     }
 </script>
 
